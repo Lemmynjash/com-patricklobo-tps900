@@ -19,15 +19,8 @@
  *
 */
 
-var argscheck = require('cordova/argscheck'),
-    channel = require('cordova/channel'),
-    utils = require('cordova/utils'),
-    exec = require('cordova/exec'),
+var exec = require('cordova/exec'),
     cordova = require('cordova');
-
-channel.createSticky('onCordovaInfoReady');
-// Tell cordova channel to wait on the CordovaInfoReady event
-channel.waitForInitialization('onCordovaInfoReady');
 
 /**
  * This represents the mobile tps900, and provides properties for inspecting the model, version, UUID of the
