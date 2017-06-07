@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com-patricklobo-tps900"
+    version="0.0.1">
+    <name>Tps900</name>
+    <description>Cordova Tps900 Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,tps900</keywords>
+    <repo>https://git-wip-us.apache.org/repos/asf/com-patricklobo-tps900.git</repo>
+    <issue>https://issues.apache.org/jira/browse/CB/component/12320648</issue>
+
+    <js-module src="www/tps900.js" name="tps900">
+        <clobbers target="tps900" />
+    </js-module>
+
+    
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Tps900" >
+                <param name="android-package" value="org.apache.cordova.tps900.Tps900"/>
+            </feature>
+        </config-file>
+        
+        <source-file src="src/android/libs/core-3.1.0.jar" target-dir="libs" framework="true" />
+
+        <source-file src="src/android/Tps900.java" target-dir="src/org/apache/cordova/tps900" />
+        <source-file src="src/android/com/common/sdk/printer/ThermalPrinter.java" 
+                     target-dir="src/com/common/sdk/printer/" />
+
+        <source-file src="src/android/com/common/sdk/TelpoException.java" 
+                     target-dir="src/com/common/sdk/" />
+
+        <source-file src="src/android/com/common/sdk/TelpoErrorCode.java" 
+                     target-dir="src/com/common/sdk/" />
+
+        <source-file src="src/android/com/common/sdk/InternalErrorException.java" 
+                     target-dir="src/com/common/sdk/" />
+
+        <source-file src="src/android/com/common/sdk/DeviceNotFoundException.java" 
+                     target-dir="src/com/common/sdk/" />
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.WAKE_LOCK" />
+        </config-file>
+    </platform>
+
+</plugin>
