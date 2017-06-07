@@ -1,103 +1,11 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "com-patricklobo-tps900@0.0.1",
-        "scope": null,
-        "escapedName": "com-patricklobo-tps900",
-        "name": "com-patricklobo-tps900",
-        "rawSpec": "0.0.1",
-        "spec": "0.0.1",
-        "type": "version"
-      },
-      "/Users/patricklobo/Google Drive/projetos/pos_azul/node_modules"
-    ]
-  ],
-  "_from": "com-patricklobo-tps900@0.0.1",
-  "_id": "com-patricklobo-tps900@0.0.1",
-  "_inCache": true,
-  "_location": "/com-patricklobo-tps900",
-  "_nodeVersion": "6.7.0",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/com-patricklobo-tps900-0.0.1.tgz_1481568063967_0.07361319195479155"
-  },
-  "_npmUser": {
-    "name": "shazron",
-    "email": "shazron@gmail.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "com-patricklobo-tps900@0.0.1",
-    "scope": null,
-    "escapedName": "com-patricklobo-tps900",
-    "name": "com-patricklobo-tps900",
-    "rawSpec": "0.0.1",
-    "spec": "0.0.1",
-    "type": "version"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/com-patricklobo-tps900/-/com-patricklobo-tps900-0.0.1.tgz",
-  "_shasum": "d5fe74712069d03f6d386ef0bd321b3abd0d38dc",
-  "_shrinkwrap": null,
-  "_spec": "com-patricklobo-tps900@0.0.1",
-  "_where": "/Users/patricklobo/Google Drive/projetos/pos_azul/node_modules",
-  "author": {
-    "name": "Apache Software Foundation"
-  },
-  "bugs": {
-    "url": "https://github.com/apache/com-patricklobo-tps900/issues"
-  },
+  "name": "com-patricklobo-tps900",
+  "version": "0.0.1",
   "cordova": {
     "id": "com-patricklobo-tps900",
     "platforms": [
       "android"
     ]
   },
-  "dependencies": {},
-  "description": "Cordova Tps900 Plugin",
-  "devDependencies": {
-    "jshint": "^2.6.0"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "d5fe74712069d03f6d386ef0bd321b3abd0d38dc",
-    "tarball": "https://registry.npmjs.org/com-patricklobo-tps900/-/com-patricklobo-tps900-0.0.1.tgz"
-  },
-  "engines": {
-    "cordovaDependencies": {
-      "2.0.0": {
-        "cordova": ">100"
-      }
-    }
-  },
-  "homepage": "https://github.com/apache/com-patricklobo-tps900#readme",
-  "keywords": [
-    "cordova",
-    "tps900",
-    "ecosystem:cordova"
-  ],
-  "license": "Apache-2.0",
-  "maintainers": [
-    {
-      "name": "patricklobo",
-      "email": "patricklobofilho@gmail.com"
-    }
-  ],
-  "name": "com-patricklobo-tps900",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/apache/com-patricklobo-tps900.git"
-  },
-  "scripts": {
-    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
-    "test": "npm run jshint"
-  },
-  "version": "0.0.1"
+  "description": "Driver POS Tps900"
 }
