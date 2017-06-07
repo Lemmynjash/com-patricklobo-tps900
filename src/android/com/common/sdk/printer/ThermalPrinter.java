@@ -610,7 +610,8 @@ public class ThermalPrinter {
 	public void textAsBitmap(
 		String text, 
 		boolean fontGrande,
-		boolean negrito
+		boolean negrito,
+		boolean invertido
 		) {
 			try {
 				this.reset();
@@ -622,6 +623,8 @@ public class ThermalPrinter {
 		Paint paint = new Paint();
 		paint.setStyle(Paint.Style.FILL);
 		paint.setColor(Color.WHITE);
+		if(invertido)
+			paint.setColor(Color.BLACK);
 		paint.setFakeBoldText(negrito);
 		paint.setTextAlign(Paint.Align.LEFT);
 		paint.setTypeface(Typeface.MONOSPACE);
@@ -640,6 +643,8 @@ public class ThermalPrinter {
 		Canvas canvas = new Canvas(image);
 		canvas.drawPaint(paint);
 		paint.setColor(Color.BLACK); 
+		if(invertido)
+			paint.setColor(Color.WHITE);
 		canvas.drawText(text, 0, baseline, paint);
 		
 		try {

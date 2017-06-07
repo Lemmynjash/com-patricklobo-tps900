@@ -155,7 +155,8 @@ public class Tps900 extends CordovaPlugin {
 								thermalprinter.textAsBitmap(
                                     _obj.getString("texto"),
                                     _obj.getBoolean("fontGrande"),
-                                    _obj.getBoolean("negrito")
+                                    _obj.getBoolean("negrito"),
+                                    _obj.getBoolean("invertido")
                                     );
 							}
 

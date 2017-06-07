@@ -113,12 +113,13 @@ function Tps900() {
             }
         });
     }
-    this.textAsBitmap = (texto, font_grande, negrito) => {
+    this.textAsBitmap = (texto, font_grande, negrito, invertido) => {
         this.buffer.push({
             textAsBitmap: {
                 texto: texto,
                 fontGrande: font_grande,
-                negrito: negrito
+                negrito: negrito,
+                invertido: invertido
             }
         });
     }
