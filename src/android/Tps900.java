@@ -188,23 +188,22 @@ public class Tps900 extends CordovaPlugin {
 
 							}
 						}
-
-                        
                         thermalprinter.reset();
-
-                        r.put("data", "sucesso");
-                        callbackContext.success(r);
-        
+                        r.put("sucesso", true);
 						} catch (Exception e) {
-                            r.put("data", "error");
-                            callbackContext.error(r);
+                            r.put("sucesso", false);
 							e.printStackTrace();
 						}
 					}
 				}).start();
-
-
-            
+                JSONObject resp = new JSONObject();
+                if(r.getBoolean("sucesso")){
+                    resp.put("data", "sucess");
+                    callbackContext.success(resp);
+                } else {
+                    resp.put("data", "error");
+                    callbackContext.error(resp);
+                }
             
         }
         else {
