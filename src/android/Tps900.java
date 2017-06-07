@@ -189,9 +189,18 @@ public class Tps900 extends CordovaPlugin {
 							}
 						}
                         thermalprinter.reset();
-                        r.put("sucesso", true);
+                        try {
+                            r.put("sucesso", true);
+                        } catch (Exception e) {
+							e.printStackTrace();
+						}
 						} catch (Exception e) {
-                            r.put("sucesso", false);
+                            try {
+                             r.put("sucesso", false);
+                                } catch (Exception e) {
+						        	e.printStackTrace();
+						        }
+                           
 							e.printStackTrace();
 						}
 					}
