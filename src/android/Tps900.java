@@ -197,10 +197,9 @@ public class Tps900 extends CordovaPlugin {
 						} catch (Exception e) {
                             try {
                              r.put("sucesso", false);
-                                } catch (Exception e) {
-						        	e.printStackTrace();
+                                } catch (Exception es) {
+						        	es.printStackTrace();
 						        }
-                           
 							e.printStackTrace();
 						}
 					}
