@@ -631,7 +631,7 @@ public class ThermalPrinter {
 		paint.setTextSize(20);
 		float baseline = - paint.ascent(); // ascent() is negative
 		int width = (int) (paint.measureText(text) + 0.5f); // round
-		int height = (int) (baseline + paint.descent() + 0.5f) - 2;
+		int height = (int) (baseline + paint.descent() + 0.5f);
 
 		// Log.v(TAG, "width: " + width);
 		// Log.v(TAG, "height: " + height);
